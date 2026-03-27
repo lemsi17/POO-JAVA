@@ -1,4 +1,5 @@
-public class Etudiant {
+public class Etudiant 
+{
     private String matricule;
     private String nom;
     private double note1;
@@ -14,10 +15,12 @@ public class Etudiant {
         this.note3 = note3;
         }
 
-        public double calculmoyenne() {
+        public double calculmoyenne() 
+        {
             return (note1 + note2 + note3) / 3;
         }
-        public String mention() {
+        public String mention() 
+        {
             double moyenne = calculmoyenne();
             if (moyenne >= 16) {
                 return "Excellent";
@@ -34,7 +37,8 @@ public class Etudiant {
 
 
 //affichage
-public void afficherEtudiant(){
+public void afficherEtudiant()
+{
     System.out.println("Matricule: " + matricule);
     System.out.println("Nom: " + nom);
     System.out.println("Moyenne: " + calculmoyenne());
@@ -42,10 +46,12 @@ public void afficherEtudiant(){
     System.err.println("-----------------------------");
 }
 
-public double getMoyenne() {
+public double getMoyenne() 
+{
     return calculmoyenne();
 }
-public String getMatricule () {
+public String getMatricule () 
+{
     return matricule;
 }
 
